@@ -48,7 +48,7 @@ def greplist_ap():
     # End argparse:}}}
 
 
-    filelist = process_fileinputs(args.filename, args.files_asstring, args.files_aslines, args.files_infile, args.files_indir, args.files_inpwd)
+    filelist = process_fileinputs(args)
 
     greplist(filelist, args.searchterm)
 
